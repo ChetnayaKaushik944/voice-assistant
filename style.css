@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#assistant {
+    width: 200px;
+    max-width: 40vw;
+}
+
+h1 {
+    color: rgb(154, 134, 107);
+    font-family: "Luckiest Guy", cursive;
+    text-align: center;
+    font-size: clamp(20px, 5vw, 40px);
+}
+
+#name {
+    color: rgb(23, 200, 47);
+    font-size: clamp(25px, 6vw, 45px);
+}
+
+#va {
+    color: rgb(91, 51, 127);
+    font-size: clamp(25px, 6vw, 45px);
+}
+
+#voice {
+    width: 100px;
+    max-width: 30vw;
+    display: none;
+}
+
+#btn {
+    background: linear-gradient(to right, rgb(82, 23, 23), rgb(53, 209, 53));
+    width: 80%;
+    max-width: 350px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: clamp(14px, 3vw, 20px);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px rgb(114, 114, 214), 2px 2px 2px rgb(202, 50, 123);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+
+#btn:hover {
+    box-shadow: 2px 2px 5px rgb(114, 114, 214), 2px 2px 5px rgb(209, 28, 127);
+    letter-spacing: 2px;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 600px) {
+    body {
+        gap: 20px;
+    }
+
+    #assistant {
+        width: 150px;
+    }
+
+    #voice {
+        width: 80px;
+    }
+
+    #btn {
+        width: 90%;
+        font-size: 16px;
+    }
+}
